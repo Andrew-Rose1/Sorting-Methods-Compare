@@ -95,10 +95,8 @@ class SortingPack {
       //return sortedArr2;
       ArrayList<Integer> sortedData = h.getData();
       int[] sortedData1 = new int[sortedData.size()];
-      int index = 0;
-      for (int m : sortedData) {
-        sortedData1[index] = m;
-        index++;
+      for (int m = 0; m < sortedData.size(); m++) {
+        sortedData1[m] = sortedData.get(m);
       }
       /* TESTING --- HAD TROUBLE WITH CONVERTING FROM ARRAYLIST TO AN ARRAY
       for (int k = 0; k < sortedData1.length; k++) {
