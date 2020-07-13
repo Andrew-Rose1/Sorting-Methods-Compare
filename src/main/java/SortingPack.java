@@ -87,8 +87,28 @@ class SortingPack {
       for (int num : unsortedArr) {
         h.insert(num);
       }
-      return unsortedArr;
+      //int[] sortedArr2 = h.toAnArray();
+      //for (int k = 0; k < sortedArr2.length; k++) {
+        //System.out.print(sortedArr2[k]);
+      //}
+      //System.out.println(" ");
+      //return sortedArr2;
+      ArrayList<Integer> sortedData = h.getData();
+      int[] sortedData1 = new int[sortedData.size()];
+      int index = 0;
+      for (int m : sortedData) {
+        sortedData1[index] = m;
+        index++;
+      }
+      /* TESTING --- HAD TROUBLE WITH CONVERTING FROM ARRAYLIST TO AN ARRAY
+      for (int k = 0; k < sortedData1.length; k++) {
+        System.out.print(sortedData1[k] + " ");
+      }
+      System.out.println(" ");
+      */
+      return sortedData1;
     }
+
 
 
 

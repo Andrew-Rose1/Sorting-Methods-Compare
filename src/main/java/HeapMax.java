@@ -22,7 +22,6 @@ class HeapMax {
       while ((i > 0) && ((i-1)/2 >= 0)) {
         if (data.get((i)) > data.get(((i-1)/2))) {
           int tmp = data.get((i));
-          //data.set(i) = data.get((i-1)/2);
           data.set(i, data.get((i-1)/2));
           data.set((i-1)/2, tmp);
         }
@@ -83,7 +82,4 @@ class HeapMax {
           return cr;
       }
     }
-
-
-
 }
